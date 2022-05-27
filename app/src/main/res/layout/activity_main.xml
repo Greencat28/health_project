@@ -4,15 +4,276 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f6f6f6">
 
     <TextView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Samsung Health"
+        app:layout_constraintBottom_toTopOf="@id/first_screen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:id="@+id/logo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Синхронизировано с Gear S3 в 01:53"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/three_dots"
+        />
+
+        <ImageView
+            android:id="@+id/three_dots"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/first_screen"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_2"
+            android:src="@drawable/three_dots"
+            android:layout_margin="15dp"
+            />
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        tools:context=".MainActivity"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toTopOf="@id/second_screen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/first_screen"
+        >
+
+        <TextView
+            android:id="@+id/steps_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Шаги"
+            app:layout_constraintBottom_toTopOf="@id/steps_2_1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+        />
+
+        <TextView
+            android:id="@+id/steps_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34"
+            app:layout_constraintBottom_toTopOf="@id/steps_3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/steps_1"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/steps_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" /9 000"
+            app:layout_constraintBottom_toTopOf="@id/steps_3"
+            app:layout_constraintLeft_toRightOf="@id/steps_2_1"
+            app:layout_constraintTop_toTopOf="@id/steps_2_1"
+            android:textColor="@color/black"
+        />
+
+        <TextView
+            android:id="@+id/steps_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Все шаги, 02:14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/steps_2_1"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            app:layout_constraintBottom_toTopOf="@id/determinateBar"
+            app:layout_constraintLeft_toLeftOf="@id/determinateBar"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            app:layout_constraintVertical_bias="0.25"/>
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progress="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/steps_2_2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/corners"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        tools:context=".MainActivity"
+        android:background="@drawable/corners"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_screen"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/second_screen"
+        >
+
+        <TextView
+            android:id="@+id/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Упражнения"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/journal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Посмотреть журнал"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/exercise_1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:paddingLeft="30dp"
+            android:src="@drawable/itam_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/exercise_2"
+            app:layout_constraintHorizontal_weight="1.5"
+            />
+
+        <ImageView
+            android:id="@+id/exercise_2"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/itam_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/exercise_1"
+            app:layout_constraintRight_toLeftOf="@id/exercise_3"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <ImageView
+            android:id="@+id/exercise_3"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:src="@drawable/itam_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/exercise_2"
+            app:layout_constraintRight_toLeftOf="@id/exercise_4"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <ImageView
+            android:id="@+id/exercise_4"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/itam_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/exercise_3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_weight="1.5"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        tools:context=".MainActivity"
+        android:background="@drawable/corners"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_screen"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/third_screen"
+        >
+
+        <TextView
+            android:id="@+id/text_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы спали?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 ч. 30 мин. | 02:10 - 10:40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_sleep"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+        />
+
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
