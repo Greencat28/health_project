@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Health</string>
+    <string name="main_title">Samsung Health</string>
+    <string name="main_hint">Синхронизировано с Gear S3 в 01:53</string>
+    <string name="steps_title">Шаги</string>
+    <string name="steps_current">34</string>
+    <string name="steps_goal">/9 000</string>
+    <string name="steps_hint">Все шаги, 02:14</string>
+    <string name="steps_percent">0%</string>
+    <string name="three_dots">three_dots</string>
+    <string name="exercise_title">Упражнения</string>
+    <string name="exercise_journal">Посмотреть журнал</string>
+    <string name="sleep_title">Вы спали?</string>
+    <string name="sleep_enter">OK</string>
+    <string name="sleep_statistic">8 ч. 30 мин. | 02:10 - 10:40</string>
 </resources>

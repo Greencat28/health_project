@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_title_size">40sp</dimen>
+    <dimen name="main_hint_size">14sp</dimen>
+    <dimen name="three_dots_width">10dp</dimen>
+    <dimen name="container_width">0dp</dimen>
+    <dimen name="container_height">125dp</dimen>
+    <dimen name="container_padding">20dp</dimen>
+    <dimen name="container_margin_bottom">10dp</dimen>
+    <dimen name="steps_title_size">18sp</dimen>
+    <dimen name="steps_current_size">24sp</dimen>
+    <dimen name="steps_goal_size">14sp</dimen>
+    <dimen name="steps_hint_size">10sp</dimen>
+    <dimen name="steps_percent_size">10sp</dimen>
+    <dimen name="steps_progressbar_width">0dp</dimen>
+    <dimen name="exercise_title_size">16sp</dimen>
+    <dimen name="exercise_journal_size">16sp</dimen>
+    <dimen name="exercise_img_width">0dp</dimen>
+    <dimen name="exercise_img_height">55dp</dimen>
+    <dimen name="container_height_sleep">100dp</dimen>
+    <dimen name="sleep_title_size">16sp</dimen>
+    <dimen name="sleep_enter_size">16sp</dimen>
+    <dimen name="sleep_statistic_size">14sp</dimen>
+</resources>
