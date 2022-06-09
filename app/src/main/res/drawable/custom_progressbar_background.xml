@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/progress_background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_progress_background"/>
+            <solid android:color="@color/main_color_light_grey"/>
+        </shape>
+    </item>
+
+    <item android:id="@+id/progress_line">
+
+        <scale android:scaleWidth="100%">  <!--необходимо для правильной работы-->
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/radius_progress_line"/>
+                <solid android:color="@color/progress_line_green"/>
+            </shape>
+        </scale>
+
+    </item>
+
+
+</layer-list>

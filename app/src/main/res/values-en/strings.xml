@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Health</string>
+    <string name="main_title">Samsung Health</string>
+    <string name="main_hint">Synced with Gear S3 at 01:53</string>
+    <string name="steps_title">Steps</string>
+    <string name="steps_current">34</string>
+    <string name="steps_goal">/9 000</string>
+    <string name="steps_hint">All steps, 02:14</string>
+    <string name="steps_percent">0%</string>
+    <string name="exercise_title">Exercise</string>
+    <string name="exercise_journal">Check journal</string>
+    <string name="sleep_title">Did you sleep?</string>
+    <string name="btn_ok">OK</string>
+    <string name="sleep_statistic">8 h. 30 min. | 02:10 – 10:40</string>
+</resources>

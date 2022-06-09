@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     // indents
+    <dimen name="container_indent">10dp</dimen>
+    <dimen name="container_padding">20dp</dimen>
+
+     //height containers
+    <dimen name="container_height">125dp</dimen>
+    <dimen name="container_height_sleep">100dp</dimen>
+
+    // for img and ic
+    <dimen name="three_dots_width">10dp</dimen>
+    <dimen name="ic_exercise_height">55dp</dimen>
+
+    //radius
+    <dimen name="container_corners_radius">20dp</dimen>
+    <dimen name="radius_progress_background">6dp</dimen>
+    <dimen name="radius_progress_line">6dp</dimen>
+
+     //text sizes
+    <dimen name="huge_text_size">40sp</dimen>
+    <dimen name="big_text_size">16sp</dimen>
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="little_text_size">10sp</dimen>
+    <dimen name="steps_current_size">24sp</dimen>
+
+</resources>
