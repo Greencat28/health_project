@@ -96,6 +96,18 @@
             app:layout_constraintTop_toBottomOf="@id/steps_title" />
 
         <TextView
+            android:id="@+id/steps_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/steps_slash_marginLeft"
+            android:text="@string/steps_slash"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/steps_goal"
+            app:layout_constraintEnd_toStartOf="@id/steps_goal"
+            app:layout_constraintStart_toEndOf="@id/steps_current" />
+
+        <TextView
             android:id="@+id/steps_goal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +115,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/normal_text_size"
             app:layout_constraintBottom_toTopOf="@id/steps_hint"
-            app:layout_constraintStart_toEndOf="@id/steps_current"
+            app:layout_constraintStart_toEndOf="@id/steps_slash"
             app:layout_constraintTop_toTopOf="@id/steps_current" />
 
         <TextView
@@ -117,7 +129,7 @@
             app:layout_constraintTop_toBottomOf="@id/steps_current" />
 
         <TextView
-            android:id="@+id/steps_percent"
+            android:id="@+id/steps_percent_counter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/steps_percent"
@@ -125,6 +137,17 @@
             android:textSize="@dimen/little_text_size"
             app:layout_constraintBottom_toTopOf="@id/steps_progressbar"
             app:layout_constraintStart_toStartOf="@id/steps_progressbar"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/steps_percent_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/steps_percent_symbol"
+            android:textColor="@color/black"
+            android:textSize="@dimen/little_text_size"
+            app:layout_constraintStart_toEndOf="@id/steps_percent_counter"
+            app:layout_constraintTop_toTopOf="@id/steps_percent_counter"
             app:layout_constraintVertical_bias="0.25" />
 
         <android.support.constraint.Guideline
